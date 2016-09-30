@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+}
+.clear {
+	clear: both;
+}
+
+
+.upload_cont {
+	visibility:hidden;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	z-index: 99;
+	width: 507px;
+	border:1px solid #e0e0e0;
+	border-radius: 5px;
+	background: #fbfbfb;
+	overflow: hidden;
+	transition:bottom 1s;
+	-o-transition:bottom 1s;
+	-ms-transition:bottom 1s;
+	-moz-transition:bottom 1s;
+	-webkit-transition:bottom 1s;
+}
+.upload_cont.max {
+	bottom:-492px;
+	transition:bottom 1s;
+	-o-transition:bottom 1s;
+	-ms-transition:bottom 1s;
+	-moz-transition:bottom 1s;
+	-webkit-transition:bottom 1s;
+}
+.upload_cont h4 {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px;
+	background: #5389d9;
+	color: #FFF;
+	font-size: 14px;
+	font-family: Arial,SimSun;
+}
+.upload_cont h4 i {
+	float: right;
+	width: 19px;
+	height: 19px;
+	margin: 12px 0 0 18px;
+	cursor: pointer;
+}
+.upload_cont h4 i.min_upload_icon {
+	background: url(../images/upload_close.png) no-repeat 0 0;
+}
+.upload_cont h4 i.min_upload_icon.max_upload_icon {
+	background: url(../images/upload_close.png) no-repeat -71px 0;
+}
+.upload_cont h4 i.close_upload_icon {
+	background: url(../images/upload_close.png) no-repeat -39px 0;
+}
+.upload_div {
+	padding: 0 46px;
+}
+.upload_btn {
+	position: relative;
+	width: 100%;
+	height: 122px;
+	background: #edf3fd;
+	margin: 24px 0 14px;
+	border:1px solid #e7e7e7;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.upload_btn img {
+	width: 63px;
+	margin: 20px auto 0;
+}
+.upload_btn p {
+	font-size: 12px;
+	color: #999;
+	margin-top: 12px;
+	padding-left: 157px;
+}
+.upload_btn p span {
+	float: right;
+	margin-right: 10px;
+}
+.upload_btn p span i {
+	float: left;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/choice.png) no-repeat 0 0;
+	margin: 2px 8px 0 0;
+
+}
+.upload_btn p span i.active {
+	background-position: 0 -16px;
+}
+.upload_pos {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,.9);
+}
+.upload_pos p {
+	width: 206px;
+	height: 68px;
+	line-height: 68px;
+	padding:0;
+	text-align: center;
+	background: url(../images/p_bg.png) no-repeat 0 0;
+	margin: 28px auto 0;
+	color: #666;
+}
+.progress_cont {
+	height: 280px;
+	overflow: auto;
+}
+.progress_div {
+	padding:18px 0;
+	border-bottom:1px dotted #999;
+}
+.progress_div p {
+	float: left;
+	width: 320px;
+	font-size: 14px;
+	color: #666;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	margin-right: 8px;
+}
+.progress {
+	float: left;
+	width: 346px;
+}
+.progress > div {
+	position: relative;
+	width: 346px;
+	height: 16px;
+	border: 1px solid #b7d5ff;
+}
+.progress .md5_pro {
+	border-bottom:none;
+}
+.progress span.pro_color {
+	display: block;
+	width: 80%;
+	height: 16px;
+	background: #cae0ff;
+}
+.progress span.jindu {
+	position: absolute;
+	left: 1px;
+	top:1px;
+	z-index: 9;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #5c9aff;
+	text-align: center;
+}
+.operate {
+	float: right;
+}
+.operate i {
+	display: inline-block;
+	width: 12px;
+	height: 14px;
+	cursor: pointer;
+}
+.operate i.play_btn {
+	background: url(../images/operate_icon.png) no-repeat 0 -18px;
+}
+.operate i.play_btn:hover {
+	background-position: 0 0;
+}
+.operate i.pause_btn {
+	background: url(../images/operate_icon.png) no-repeat 0 -59px;
+}
+
+.operate i.pause_btn:hover {
+	background-position: 0 -42px;
+}
+
+.operate i.reset_btn {
+	background: url(../images/operate_icon.png) no-repeat -63px -1px;
+}
+
+.operate i.reset_btn:hover {
+	background-position: -63px -22px;
+}
+
+
+
+.operate i.del_btn {
+	background: url(../images/operate_icon.png) no-repeat -33px -59px;
+	margin: 0 5px 0 10px;
+}
+.operate i.del_btn:hover {
+	background-position: -33px 0px;
+}
+.progress_div_two p,.progress_div_two .operate {
+	line-height: 34px;
+}
+.upload_div a.empty_btn {
+	display: block;
+	float: right;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 20px;
+	background: #5389d9;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 12px;
+	margin: 10px 0;
+}

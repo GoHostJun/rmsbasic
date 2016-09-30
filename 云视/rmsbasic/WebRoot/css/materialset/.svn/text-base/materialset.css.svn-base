@@ -1,0 +1,54 @@
+.popup-cont{
+	width: 505px;
+	height: 240px;
+	padding: 23px 20px 30px 33px;
+}
+.thumb{
+	padding-top: 30px;
+}
+.thumb img{
+	border: solid 1px #ccc;
+	width: 160px;
+	height: 90px;
+}
+.thumb p{
+	text-align: center;
+	margin-top: 36px;
+}
+.thumb p a{
+	color: #2e8ded;
+	text-decoration: underline;
+}
+.details-thumb label{
+	font-size: 14px;
+	color: #333;
+	width: 40px;
+	display: inline-block;
+}
+.details-thumb label span{
+	color: #eb5a5a;
+    margin-left: 4px;
+}
+.details-thumb input{
+	width: 250px;
+	height: 30px;
+}
+.details-thumb input,
+.details-thumb textarea,
+.details-thumb select{
+	border: solid 1px #ccc;
+	margin-bottom: 16px;
+	vertical-align: top;
+	padding: 0 10px;
+}
+.details-thumb select{
+	width: 96px;
+	height: 30px;
+}
+.details-thumb textarea{
+	width: 250px;
+	height: 83px;
+}
+.save-btn {
+	margin-left: 74px;
+}

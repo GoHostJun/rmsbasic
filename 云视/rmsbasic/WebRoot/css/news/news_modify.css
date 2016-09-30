@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.menu-list {  
+	display: none;
+	color: #999;
+    height: 150px;
+    line-height: 30px;
+    display: none;
+    cursor: pointer;
+    margin-left: 5px;
+    overflow: auto;
+  }
+.modify_right_l ul:nth-child(2){margin-top: 0px;}

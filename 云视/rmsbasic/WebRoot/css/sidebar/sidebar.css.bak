@@ -1,0 +1,216 @@
+.sidebar_div {
+	-display:none;
+	position: fixed;
+	right: 0;
+	top: 200px;
+	width: 60px;
+}
+.sidebar_div ul {
+	border-radius: 6px 0 0 6px;
+	background:#c6ddf0;
+}
+.sidebar_div ul li {
+	position: relative;
+	height: 48px;
+	padding-top: 11px;
+	margin-top:1px;
+}
+.sidebar_div ul li:nth-child(1) {
+	margin:0;
+	border-radius: 6px 0 0 0;
+}
+.sidebar_div ul li:last-child {
+	border-radius: 0 0 0 6px;
+}
+.sidebar_div ul li a {
+	outline: none;
+}
+.sidebar_div ul li a > i {
+	display: block;
+	width: 31px;
+	height: 31px;
+	margin-left: 14px;
+	margin-top: 3px;
+}
+.sidebar_div ul li i.sidebar_icon1 {
+	background: url(../../images/sidebar/sidebar_icon.png) no-repeat 0 0;
+}
+.sidebar_div ul li i.sidebar_icon2 {
+	background: url(../../images/sidebar/sidebar_icon.png) no-repeat 0 -58px;
+}
+.sidebar_div ul li i.sidebar_icon3 {
+	background: url(../../images/sidebar/sidebar_icon.png) no-repeat 0 -119px;
+}
+.sidebar_div ul li i.sidebar_icon4 {
+	background: url(../../images/sidebar/sidebar_icon.png) no-repeat 0 -178px;
+}
+.sidebar_div ul li i.sidebar_icon6 {
+	background: url(../../images/sidebar/sidebar_icon.png) no-repeat 0 -288px;
+}
+/* .sidebar_div ul li a > p {
+	display: none;
+	text-align: center;
+	font-size: 14px;
+	color: #FFF;
+} */
+.sidebar_div ul li a > .sidebar_hd {
+	display: none;
+	text-align: center;
+	font-size: 14px;
+	color: #FFF;
+}
+
+.sidebar_div ul li p.three_word {
+	line-height: 38px;
+}
+.sidebar_div ul li .line {
+	position: absolute;
+	left: 5px;
+	bottom: -1px;
+	width: 50px;
+	height: 1px;
+	background: #FFF;
+}
+.sidebar_div ul li:hover {
+	background: #448fd0;
+}
+.sidebar_div ul li:hover a > i {
+	display: none;
+}
+/* .sidebar_div ul li:hover a > p {
+	display: block;
+} */
+.sidebar_div ul li:hover a > .sidebar_hd {
+	display: block;
+}
+.sidebar_div ul li:hover a > .sidebar_hd p{
+	text-align: center;
+}
+.sidebar_div ul li:hover .code_cont {
+	display: block;
+}
+.code_cont {
+	position: absolute;
+	right: 75px;
+	top: -40px;
+	z-index: 9;
+	width: 246px;
+	padding: 8px;
+	background: #eff1f4;
+	border-radius: 3px;
+}
+.about_code {
+	width: 100px;
+}
+.about_code h4 {
+	font-size: 16px;
+	color: #333;
+	margin: 16px 0 24px;
+	padding-left: 4px;
+}
+.about_code p {
+	font-size: 12px;
+	color: #959596;
+}
+.about_code p i {
+	float: left;
+	width: 4px;
+	height: 4px;
+	background: #959596;
+	border-radius: 2px;
+	vertical-align: middle;
+	margin-right: 4px;
+	margin-top:7px;
+}
+.about_code p span {
+	float: left;
+	width: 92px;
+}
+.sucaiji_btn {
+	overflow: hidden;
+	margin-top: 25px;
+	display:none;
+}
+.sidebar_div ul li i.sidebar_icon5 {
+	width: 34px;
+	background: url(../../images/sidebar/sidebar_icon.png) no-repeat 0 -240px;
+}
+
+
+/*JX右侧按钮开始*/
+.code_hover {
+	-display:none;
+	position: fixed;
+	right: 0;
+	top: 40%;
+	z-index: 99;
+	width: 38px;
+	height: 94px;
+	background: rgba(0,0,0,.4);
+	border-radius:5px 0 0 5px;
+}
+.app_code {
+	position: relative;
+}
+.app_code i {
+	display: block;
+	width: 18px;
+	height: 26px;
+	margin:12px auto 0;
+	cursor: pointer;
+}
+.app_code i.app_code_icon {
+	background: url(../../images/index/index1_icon.png) no-repeat -52px -45px;
+	margin-top: 16px;
+}
+.app_code i.app_code_icon:hover {
+	background: url(../../images/index/index1_icon.png) no-repeat -80px -45px;
+}
+.app_code i.wx_code_icon {
+	background: url(../../images/index/index1_icon.png) no-repeat -52px -82px;
+}
+.app_code i.wx_code_icon:hover {
+	background: url(../../images/index/index1_icon.png) no-repeat -80px -82px;
+}
+.code_cont2 {
+	display: none;
+	position: absolute;
+	right: 38px;
+	bottom:-64px;
+	z-index: 9;
+	width: 352px;
+}
+.code_div2 {
+	float: left;
+	width: 312px;
+	background: #FFF;
+	padding: 14px;
+	border-radius:10px;
+	box-shadow: 4px 0 10px #bfbfbf;
+}
+.about_code2 {
+	width: 178px;
+}
+.about_code2 h3 {
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	margin: 20px 0 10px;
+}
+.about_code2 p {
+	font-size: 14px;
+	color: #999;
+	line-height: 1.5em;
+}
+.code_cont2 b {
+	float: right;
+	display: inline-block;
+	width:0px;
+	height:0px;
+	border-left:12px solid #FFF;
+	border-top:7px solid transparent;
+	border-bottom:7px solid transparent;
+	vertical-align: middle;
+	margin-top: 68px;
+}
+/*JX右侧按钮结束*/

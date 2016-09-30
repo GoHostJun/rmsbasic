@@ -1,0 +1,9 @@
+$(function(){
+	$("#noticename").blur(function(){
+   			if(!$.trim($("#noticename").val())){
+   				$("#notice_title").html("公告类型名称不能为空");
+   			}else{
+   				$("#notice_title").html("*");
+   			}
+   	 });
+})

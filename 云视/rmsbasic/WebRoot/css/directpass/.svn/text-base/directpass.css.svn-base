@@ -1,0 +1,97 @@
+
+.clearfloat:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.clearfloat {*zoom:1;}/*IE/7/6*/
+
+.recode_inner {
+	width: 1169px;
+	margin: 0 0 0 82px;
+}
+.recode_search_div {
+	padding:12px 0;
+	background: linear-gradient(left,#bac8ff,#d2c9ff,#dac9ff,#dac9ff);
+	background: -o-linear-gradient(left,#bac8ff,#d2c9ff,#dac9ff,#dac9ff);
+	background: -ms-linear-gradient(left,#bac8ff,#d2c9ff,#dac9ff,#dac9ff);
+	background: -moz-linear-gradient(left,#bac8ff,#d2c9ff,#dac9ff,#dac9ff);
+	background: -webkit-linear-gradient(left,#bac8ff,#d2c9ff,#dac9ff,#dac9ff);
+}
+.search_what p {
+	display: inline-block;
+	font-size: 14px;
+	color: #FFF;
+	margin-left: 20px;
+	line-height: 24px;
+}
+.search_what >p:nth-child(2) span{
+	    margin-left: 10px;
+}
+.search_what input,.search_what select {
+	width: 120px;
+	height: 22px;
+	padding:0 3px;
+	border:1px solid #b6b6b6;
+	background-color: #FFF;
+	margin-left: 12px;
+	color: #999;
+}
+.recode_search_btn a {
+	display: inline-block;
+	width: 64px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 2px;
+}
+.recode_search_btn a.search_recode {
+	background: #3d98f6;
+	margin-right: 22px;
+	color: #FFF;
+}
+.recode_search_btn a.search_reset {
+	background: #FFF;
+	margin-right: 45px;
+	color: #333;
+}
+.record_content table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.record_content table th {
+	height: 32px;
+	border:1px solid #d3d3d3;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	background: #fcfcfc;
+	font-weight: normal;
+}
+.record_content table td {
+	height: 32px;
+	border:1px solid #d3d3d3;
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+}
+.record_content table td:nth-child(1),.record_content table th:nth-child(1) {
+	border-left: none;
+}
+.record_content table td:last-child,.record_content table th:last-child {
+	border-right: none;
+}
+.recode_table_div {
+	min-height: 300px;
+}
+.recode_bottom {
+	border:1px solid #d3d3d3;
+	padding-bottom: 14px;
+}
+.time_input {
+	background-image: url(../images/recode_rili.png);
+	background-repeat: no-repeat;
+	background-position: 112px 5px;
+}

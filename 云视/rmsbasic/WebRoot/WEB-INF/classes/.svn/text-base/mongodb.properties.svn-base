@@ -1,0 +1,16 @@
+#ceshi
+mongo.repset=192.168.0.36:27017,192.168.0.36:27017,192.168.0.36:27017
+mongo.database=mqs
+mongo.user=mqs
+mongo.password=cdvcloud123!
+mongo.connectionsPerHost=10
+mongo.threadsAllowedToBlockForConnectionMultiplier=5
+
+#yuntonglian
+#mongo.repset=10.44.204.231:27017,10.44.205.155:27017,10.44.140.1:27017
+#mongo.database=ytl
+#mongo.user=onair
+#mongo.password=onair123
+#mongo.connectionsPerHost=10
+#mongo.threadsAllowedToBlockForConnectionMultiplier=5
+

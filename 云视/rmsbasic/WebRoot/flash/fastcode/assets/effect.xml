@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data CatalogType="4" Page="0" TotalPage="1">
+<Clip FileKEY="123457" Name="淡入淡出" ServerName="blendinout"  ActionName="FadeInOut" IMG="effect/fadeinout.swf" Type="4" Duration="1000" Options=""/>
+<Clip FileKEY="2122" Name="闪黑" ServerName="fadeinout"  ActionName="ShanHei" IMG="effect/shanhei.swf" Type="4" Duration="1000" Options="color=black"/>
+<Clip FileKEY="3232" Name="闪白" ServerName="fadeinout"  ActionName="ShanBai" IMG="effect/shanbai.swf" Type="4" Duration="1000" Options="color=white"/>
+</data>

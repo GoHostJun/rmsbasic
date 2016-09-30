@@ -1,0 +1,173 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@include file="/common/commonjscss.jsp"%>
+<!DOCTYPE HTML>  
+<html>  
+<head>  
+    <title>上传图片</title>  
+    <meta charset="utf-8">  
+    <script src="${ctx }/common/plugins/ajaxupload/jquery-form.js" type="text/javascript"></script>
+</head>  
+<body>  
+    <iframe name="uploadfrm" id="uploadfrm" style="display: none;"></iframe>  
+    <form name="formHead" method="post" id="formHead" enctype="multipart/form-data" target="uploadfrm">  
+  
+        <div>  
+            <div>  
+            	<input type="text"  name="id" value="">
+<%--            	accept="audio/*|video/*|image/*"--%>
+            	<input type="file"  name="video_head"  id="video_head"  accept="audio/*|video/*|image/*" capture="camcorder" onchange="javascript:setImagePreview('video_head','video')" >
+                <input type="file" name="file_head" data-role="uploader" capture="camera" accept="image/*" id="file_head" onchange="javascript:setImagePreview('file_head','preview');" />  
+            	<input type="file" name="audio_head"  accept="audio/*" capture="microphone">
+            </div>  
+        </div>  
+    </form>  
+            <div>  
+                <div id="DivUp" >  
+                <span>文件大小：</span><input type="text" id="fileSize" >
+                <span>上传进度：</span><input type="text" id="scrolbar" >
+                    <input type="button" data-inline="true" id="BtnUp" value="确认上传" data-mini="true" />  
+                </div>  
+            </div>  
+    <div data-role="fieldcontain">  
+        <div id="localImag">  
+            <img id="preview" width="-1" height="-1" style="display: none" />  
+        </div>  
+        <video id="video" controls="controls" width="500px" height="500px">
+        </video>
+        <button id="capture">Capture</button>
+		<div id="output"></div>
+	    </div>  
+          
+  
+    <script type="text/javascript"> 
+	        var uploadComplete=false;
+	    $(function(){  
+	        //异步提交表单  
+	        $("#BtnUp").on("click",function(){  
+	            $("#formHead").ajaxSubmit({  
+	                type:'post',  
+	                url:"${ctx }/api/upload/uploadStream/" ,  
+	                success:function(data){  
+	                	addTrans(data,"test")
+	                    console.log(data);  
+	                },  
+	                error:function(XmlHttpRequest,textStatus,errorThrown){  
+	                    console.log(XmlHttpRequest);  
+	                    console.log(textStatus);  
+	                    console.log(errorThrown);  
+	                }  
+	            }); 
+	            while(uploadComplete){
+	            	
+	            }
+	        });  
+	    });  
+	    
+	    function getUploadSize(){
+	    	  function getUploadToken(size){
+	 	    	 $.ajax({
+	 				 url : ctx +"/api/upload/getUploadToken/?accessToken=token&timeStamp=22&resName=test&resSize="+size+"&appCodeytl&versionId=v1&companyId=cdv-yuntonglian&userId=56737ef76acecb9ae8b9b2a0&serviceCode=566fd73c84e353224410c0b6",
+	 				 headers:{"Content-Type":"application/json"},
+	 				 data : onairMap.toJson(),
+	 				 type : "post",
+	 				 cache : false,
+	 				 dataType : "json",
+	 				 success : function(data) {
+	 					if(data.code==0){
+	 						uploadtoken=data.data.uploadToken;
+	 					}
+	 					 
+	 				 },
+	 				 error:function(){
+	 					 
+	 					 }
+	 				 })
+	 	    }
+	    }
+	    //获取上传token
+	    var uploadtoken;
+	    function getUploadToken(size){
+	    	 $.ajax({
+				 url : ctx +"/api/upload/getUploadToken/?accessToken=token&timeStamp=22&resName=test&resSize="+size+"&appCodeytl&versionId=v1&companyId=cdv-yuntonglian&userId=56737ef76acecb9ae8b9b2a0&serviceCode=566fd73c84e353224410c0b6",
+				 headers:{"Content-Type":"application/json"},
+				 data : onairMap.toJson(),
+				 type : "post",
+				 cache : false,
+				 dataType : "json",
+				 success : function(data) {
+					if(data.code==0){
+						uploadtoken=data.data.uploadToken;
+					}
+					 
+				 },
+				 error:function(){
+					 
+					 }
+				 })
+	    }
+    function addTrans(url,name){
+    	 var onairMap = new OnairHashMap();
+    	 onairMap.put("accessToken", "token");
+    	 onairMap.put("timeStamp", "11");
+    	 onairMap.put("url", url);
+    	 onairMap.put("name", name);
+    	 $.ajax({
+			 url : ctx +"/cdv-yuntonglian/ytl/56737ef76acecb9ae8b9b2a0/566fd73c84e353224410c0b6/v1/api/media/saveHttpMaterial/",
+			 headers:{"Content-Type":"application/json"},
+			 data : onairMap.toJson(),
+			 type : "post",
+			 cache : false,
+			 dataType : "json",
+			 success : function(data) {
+				
+				 if($("#addUpload").val()==0){
+						if(data.code==0){
+							loadUploadHtml(data.data.id);
+						}
+					}else{
+						uCont('material/toMaterial/');
+					}
+			 },
+			 error:function(){
+				 
+				 }
+			 })
+    	 
+    }
+    
+    
+    
+    
+        function setImagePreview(fileId,viewId) {  
+            var preview, img_txt, localImag, file_head = document.getElementById(fileId), 
+            picture = file_head.value;  
+            $("#fileSize").val(document.getElementById(fileId).files.item(0).size);
+<%--            if (!picture.match(/.jpg|.gif|.png|.bmp/i)) return alert("您上传的图片格式不正确，请重新选择！"),  --%>
+<%--            !1;  --%>
+            if (preview = document.getElementById(viewId), file_head.files && file_head.files[0]) preview.style.display = "block",  
+                preview.style.width = "63px",  
+                preview.style.height = "63px",  
+                preview.src = window.navigator.userAgent.indexOf("Chrome") >= 1 || window.navigator.userAgent.indexOf("Safari") >= 1 ? window.webkitURL.createObjectURL(file_head.files[0]) : window.URL.createObjectURL(file_head.files[0]);  
+            else {  
+                file_head.select(),  
+                file_head.blur(),  
+                img_txt = document.selection.createRange().text,  
+                localImag = document.getElementById("localImag"),  
+                localImag.style.width = "63px",  
+                localImag.style.height = "63px";  
+                try {  
+                    localImag.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)",  
+                    localImag.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = img_txt  
+                } catch(f) {  
+                    return alert("您上传的图片格式不正确，请重新选择！"),  
+                    !1  
+                }  
+                preview.style.display = "none",  
+                document.selection.empty()  
+            }  
+            return document.getElementById("DivUp").style.display = "block",  
+            !0  
+        }  
+    </script>  
+</body>  
+</html> 

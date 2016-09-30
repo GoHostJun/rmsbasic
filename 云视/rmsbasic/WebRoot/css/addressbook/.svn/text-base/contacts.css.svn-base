@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*通讯录*/
+.contacts_cont { width:88%; max-width:1200px; min-width:960px; margin:0 auto;}
+.contacts_cont .search_div { margin:22px 0 32px; width:778px;}
+.contacts_cont .search_div input { width:664px;}
+.contacts_cont .search_div a { margin:0; width:auto;}
+.contacts_cont table { width:100%; border-left:1px solid #ececec; border-bottom:1px solid #ececec;}
+.contacts_cont table th { height:50px; background:#fdfdfd; border-top:1px solid #ececec; border-right:2px solid #ececec; font-size:14px; font-family:Microsoft YaHei; color:#333; font-weight:normal;}
+.contacts_cont table td { height:62px; border-top:1px solid #ececec; border-right:2px solid #ececec; text-align:center; font-size:14px; color:#333;}
+.contacts_cont table td img { width:40px; height:40px; margin-right:10px; border:1px solid #eee; border-radius:100%; display:inline-block; vertical-align:middle;}
+.contacts_cont table td a { font-family:SimSun; font-size:14px; color:#d58c00;}
+.contacts_cont table td a.noclick { cursor:default;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.contacts_cont table td a i { width:18px; height:13px; background:url(../../common/images/mail_icon.png) no-repeat left top; margin-left:10px;}
+.contacts_cont table td.mail_td { font-family:Arial; text-decoration:underline; color:#7eb8f8;}
+.contacts_cont .a_btn_div { margin-top:-2px;}
+.contacts_cont .a_btn_div a { display:inline-block; height:32px; line-height:32px; padding:0 24px; border-radius:3px; font-size:14px; margin:24px 10px 0 0;}
+/*.contacts_cont a.new_btn { color:#08b400; border:1px solid #08b400;}
+.contacts_cont a.dao_btn { color:#478fe0; border:1px solid #478fe0;}*/
+.contacts_cont .a_btn_div a { color:#478fe0; border:1px solid #478fe0;}
+.contacts_cont .a_btn_div a:hover { color:#FFF; border:1px solid #478fe0; background:#478fe0;}
+

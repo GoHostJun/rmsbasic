@@ -1,0 +1,9 @@
+body {
+	overflow: visible !important;
+}
+#content {
+	padding-top: 120px;
+}
+.jx_header {
+	background: #FFF;
+}

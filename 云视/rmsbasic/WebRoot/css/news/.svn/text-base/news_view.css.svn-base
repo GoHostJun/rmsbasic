@@ -1,0 +1,11 @@
+/*提交审核div样式*/
+.audit_sub_audit{display:none}
+.audit_sub_audit .popup_cont  p{text-align: center;font-size: 24px;color: #333;margin-top: 92px;}
+.audit_sub_audit .edit_btn_div{margin-top: 116px;}
+@charset "utf-8";
+/* CSS Document */
+
+
+.img_cont .img_div  { position:relative;}
+.img_cont .img_div b.del_img { display:none; position:absolute; right:4px; top:4px;z-index:999; width: 16px;height: 16px; background:url(../images/header_icon.png) no-repeat -21px -65px;}
+.img_cont .img_div:hover b.del_img { display:block;}

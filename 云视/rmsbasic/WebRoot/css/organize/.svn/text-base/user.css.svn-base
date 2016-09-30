@@ -1,0 +1,16 @@
+.layui-layer-title{background:#ffad00;color:#fff;}
+.new-user-table{margin: 20px auto;}
+.layui-layer-content{height:auto !important;}
+.new-user-table tr{height:30px;line-height:30px;}
+.new-user-table td input{width:260px;height:26px;border:solid 1px #ccc;padding-left:10px;}
+.new-user-table td input[type=radio]{width:22px;height:auto;}
+
+.new-user-table td select{padding-left:10px;height:26px;border:solid 1px #ccc;}
+.new-user-table td select option{padding-left:10px;}
+#treeDemo_1_ul{height:150px;overflow:auto;}
+.save-btn,.cancel-btn{margin-top:30px; background:#4d90fe;color:#fff;width:180px;height:40px;text-align:center;line-height:40px;display:inline-block;border-radius: 8px;font-size:16px;}
+.cancel-btn{background: #e5e5e5; color: #333;}
+.save-btn{margin-right:20px;}
+.new-user-table span{
+	color:#F44336;
+}

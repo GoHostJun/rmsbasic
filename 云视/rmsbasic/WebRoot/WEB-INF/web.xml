@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	
+	<!-- 编码格式滤器start -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 编码格式滤器end -->
+
+	<!-- 日志配置start -->
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>/WEB-INF/classes/log4j.properties</param-value>
+	</context-param>
+	<!-- 日志配置end -->
+
+	<!-- session过滤start -->
+    <filter>
+    	<filter-name>UsersFilter</filter-name>
+    	<filter-class>com.cdvcloud.rms.web.filter.UsersFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+    	<filter-name>UsersFilter</filter-name>
+    	<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+	<!-- session过滤end -->
+
+	<!-- spring 相关配置start -->
+	<servlet>
+		<servlet-name>springMVC</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:springMVC.xml,classpath:applicationContext.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springMVC</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<!-- spring MVC 相关配置end -->
+
+	<!-- 上传插件-开始 -->
+	<servlet>
+		<servlet-name>TokenServlet</servlet-name>
+		<servlet-class>com.cdvcloud.upload.servlet.TokenServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TokenServlet</servlet-name>
+		<url-pattern>/tk</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>StreamServlet</servlet-name>
+		<servlet-class>com.cdvcloud.upload.servlet.StreamServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StreamServlet</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FormDataServlet</servlet-name>
+		<servlet-class>com.cdvcloud.upload.servlet.FormDataServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FormDataServlet</servlet-name>
+		<url-pattern>/fd</url-pattern>
+	</servlet-mapping>
+	<!-- 上传插件-结束 -->
+	<!-- API断点续传相关配置start -->
+	<servlet>
+		<servlet-name>ApiUploadTokenServlet</servlet-name>
+		<servlet-class>com.cdvcloud.rms.web.servlet.ApiUploadTokenServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApiUploadTokenServlet</servlet-name>
+		<url-pattern>/api/upload/getUploadToken/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ApiUploadFileSizeServlet</servlet-name>
+		<servlet-class>com.cdvcloud.rms.web.servlet.ApiUploadFileSizeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApiUploadFileSizeServlet</servlet-name>
+		<url-pattern>/api/upload/getFileSize/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ApiUploadServlet</servlet-name>
+		<servlet-class>com.cdvcloud.rms.web.servlet.ApiUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApiUploadServlet</servlet-name>
+		<url-pattern>/api/upload/uploadStream/</url-pattern>
+	</servlet-mapping>
+	<!-- API断点续传相关配置end -->
+</web-app>

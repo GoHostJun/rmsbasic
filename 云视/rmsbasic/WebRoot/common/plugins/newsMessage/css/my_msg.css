@@ -1,0 +1,144 @@
+/*我的信息20160216lsj*/
+.my-msg{
+	width: 1200px;
+	height: 320px;
+	overflow: hidden;
+}
+.title {
+	font-size: 24px;
+	width: 634px;
+}
+.title span{
+	color: #da3023;
+}
+.title i{
+	margin:0px 4px 0 10px ;
+	display: inline-block;
+	vertical-align: middle;
+	height: 1px;
+	width: 480px;
+	background: #ddd;
+}
+.title b{
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 25px;
+	background: url(../img/and.png)no-repeat;
+}
+.msg-div{
+	position: relative;
+	height: 90px;
+}
+
+.msg-list{
+	font-size: 10px;
+}
+.msg-list img{
+	margin-right: 12px;
+	float: left;
+	width: 160px;
+	height: 90px;
+	background: #ccc;
+}
+.msg-list img ~ div{
+}
+.msg-name{
+	vertical-align: top;
+	display: inline-block;
+	height: 22px;
+	color: #3590c1;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.msg-cont h4{
+	font-weight: 400;
+	width: 275px;
+	font-size: 16px;
+	color: #333;
+	display: inline-block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.msg-cont p {
+	font-size: 14px;
+	color: #666;
+	height:36px;
+}
+.msg-cont-inner{
+	margin-top: 3px;
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4;
+}
+.reporter{
+	font-size: 12px;
+	margin-top: 8px;
+	color: #999;
+}
+.reporter .fr{
+	color: #8e8e8e;
+}
+.msg-list ul{
+	height: 258px;
+	border-bottom: solid 1px #ccc;
+}
+.msg-list ul li{
+	width: 560px;
+	margin-left: 24px;
+	display: inline-block;
+	float: left;
+	padding: 20px 0;
+	border-bottom: dashed 1px #ddd;
+}
+.msg-list ul li:last-child{
+	border-bottom: none;
+}
+.msg-cont{
+	width: 530px;
+}
+.msg-cont i p{
+	margin-top: 12px;
+	color:#FFF;
+}
+.msg-cont i{
+
+	line-height: 1;
+	font-size: 14px;
+	color: #fff;
+	padding: 0px 9px;
+	word-wrap: break-word;
+	font-style: normal;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	width:14px;
+	height: 60px;
+	background: url(../img/icon3.png)no-repeat 0px 0px;
+	display: inline-block;
+}
+.msg-cont i.examine{
+	background: url(../img/icon3.png)no-repeat -56px 0px;
+}
+.msg-cont i.adopt{
+	background: url(../img/icon3.png)no-repeat -115px 0px;
+}
+.msg-cont i.finish{
+	background: url(../img/icon3.png)no-repeat -175px 0px;
+}
+.img-div{
+	position: relative;
+}
+.img-div .duration{
+	font-size: 12px;
+	color: #ccc;
+	position: absolute;
+	line-height: 20px;
+	text-align: right;
+	padding: 0 5px;
+	height: 20px;
+	width: 150px;
+	background: rgba(0,0,0,0.5);
+	top: 69px;
+}

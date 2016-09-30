@@ -1,0 +1,23 @@
+$(function(){
+	$("#userName").blur(function(){
+			if(!$.trim($("#userName").val())){
+				$("#notice_userName").html("用户名不能为空");
+			}else{
+				$("#notice_userName").html("*");
+			}
+	 });
+	$("#companyId").blur(function(){
+		if(!$.trim($("#companyId").val())){
+			$("#notice_companyId").html("客户标识不能为空");
+		}else{
+			$("#notice_companyId").html("*");
+		}
+ });
+	$("#otherConfig").blur(function(){
+		if(!$.trim($("#otherConfig").val())){
+			$("#notice_otherConfig").html("BSS密钥不能为空");
+		}else{
+			$("#notice_otherConfig").html("*");
+		}
+	});
+})

@@ -1,0 +1,161 @@
+ .user_message_popup{
+	height:100%;
+	width:100%;
+ }
+ .user_message_popup .popup_inner{
+ 	position:relative;
+ 	top:50%;
+ 	margin-top:-185px;
+ }
+ .popup_inner_index { width:600px !important; height:370px  !important;}  
+
+ .popup_cont .edit_btn_div .save_btn_index { margin-left:140px;}
+ .head_img p{
+ 	text-align:center;
+ 	color:#4d90fe;
+ 	margin-top:122px;
+ }
+ .free-space{
+ 	width:512px;
+ 	margin:0 44px;
+ }
+ .free-space p{
+ 	text-align:right;
+ 	margin-bottom:10px;
+ }
+ .free-space .space-percent{
+ 	width:100%;
+ 	height:8px;
+ }
+ .free-space .space-percent > div{
+ 	width:522;
+ 	height:100%;
+ 	margin: 0 auto;
+ 	background:url(../../common/images/pline.png)no-repeat 0px 0px;
+ }
+  .third-party{
+    margin-top: 10px;
+  	margin-left: 50px;
+  }
+ .third-party i{
+     display:inline-block;
+     vertical-align:middle;
+	 width:56px;
+	 height:44px;
+	 margin-right: 45px;
+	 margin-left: 19px;
+ }
+ .third-party span{
+ 	display:inline-block;
+ 	padding:2px 5px;
+ 	border-radius:3px;
+ 	background:#ddd;
+ 	font-size:12px;
+ 	color:#fff;
+ 	margin-right:10px;
+ }
+ .third-party u{
+ 	font-size:16px;
+ 	cursor:pointer;
+ }
+ .third-party .weixin-bd i{
+ 	background:url(../../common/images/iconbd.png)no-repeat 0px 0px;
+ }
+  .third-party .qq-bd i{
+ 	background:url(../../common/images/iconbd.png)no-repeat -43px 0px;
+ }
+ .third-party .weixin-bd span.active{
+ 	background:#5ABB03;
+ }
+ .third-party .qq-bd span.active{
+ 	background:#149CFB;
+ }
+  .third-party .weixin-bd u.active{
+ 	color:#5ABB03;
+ }
+ .third-party .qq-bd u.active{
+ 	color:#149CFB;
+ }
+ .third-party  p{
+ 	font-size:16px;
+ 	/*padding-left:47px;*/;
+ }
+ .state-ment{
+ 	text-align:center;
+ 	font-size:14px;
+ 	color:#ccc;
+ 
+ }
+ .popup_inner_index .edit_btn_div{
+ 	margin-top:33px;
+ }
+ /*20160505 by lsj*/
+ .user_message_popup .top{
+    height: 80px;
+    background: url(../../common/images/pbg.jpg) repeat-x 0px 0px;
+ }
+ .per-data{ 
+    text-decoration: underline;
+    color: #4d90fe;
+ }
+ .user_message_popup .popup_cont .user_message{
+    width: 436px;
+ }
+ .user_message ul{
+    width: 200px;
+    font-size: 16px;
+    overflow: hidden;
+ }
+ .user_message_popup .popup_cont .user_message li input {
+     width: 85px;
+ }
+ .user_message .storage,.user_message .integral{
+     display: inline-block;
+     width: 27px;
+     height: 27px; 
+     vertical-align: middle; 
+     margin-top: -3px;
+     
+ }
+ .user_message .storage{
+     background: url(../../common/images/personal.png)no-repeat 0px 3px;
+ }
+ .user_message .integral{
+     margin-left: 38px;
+     background: url(../../common/images/personal.png)no-repeat 0px -25px;
+ }
+ .user_message_popup .popup_cont{
+     margin-top: -34px;
+     padding-top: 0px;   
+ }
+ .user_message > div{
+     margin-bottom: 12px;
+     padding-left: 20px;
+     margin-top: 6px;
+      color: #fff;
+ }
+ .wechat-id{
+     line-height: 44px;
+     font-size: 16px;
+     color: #000;
+     display: block;
+     
+ }
+ .third-party .fr{
+     height: 44px;
+     width:250px;
+ }
+ .user_message_popup .popup_cont .head_img,.user_message_popup .popup_cont .user_message {
+     height: 145px ;
+ }
+ .popup_cont .heading_info {
+     border: solid 2px #fff;
+ }
+ #jiGouId {
+     display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 99px;
+ }

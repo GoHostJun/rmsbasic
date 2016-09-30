@@ -1,0 +1,15 @@
+.gg_cont{
+	padding-left:4%;
+	padding-right:3%;
+	padding-bottom:50px;
+}
+.control-label{
+	float:left;
+	text-align:right;
+	margin-left:20px;
+}
+.controls{
+	float:left; 
+	width:90%;
+	margin-bottom:50px;
+}

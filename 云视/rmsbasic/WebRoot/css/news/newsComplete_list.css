@@ -1,0 +1,40 @@
+.ts_popup{
+    width:200px;
+    margin:0 auto;
+}
+.tsp_cont .title{
+    font-size:12px;
+    color:#000;
+    padding-bottom:18px;
+}
+.tsp_cont{
+	border-bottom:solid 2px #ccc;
+    width:300px;
+    height:156px;
+}
+.ts_popup .ts_inner{
+    display:inline-block;
+}
+.ts_popup .inews{
+    width: 85px;
+    height: 82px;
+    background:url(../../common/images/tsicona.png) no-repeat -88px 0px;
+}
+.ts_popup .inews.active{
+	background:url(../../common/images/tsicona.png) no-repeat 0px 0px;
+
+}
+.ts_popup .nettv{
+    width: 85px;
+    height: 82px;
+    background:url(../../common/images/tsicona.png) no-repeat -89px -93px;
+}
+.ts_popup .nettv.active{
+    background:url(../../common/images/tsicona.png) no-repeat 0px -93px;
+}
+.ts_inner p{
+    padding:5px 0;
+    font-size:10px;
+    color:#d5d2d2;
+	text-align: center;
+}

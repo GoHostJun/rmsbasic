@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*分页*/
+ul.page { margin-top:20px; text-align:center;}
+ul.page li { display:inline-block; font-size:14px; color:#333; margin:0 3px;}
+ul.page a { color:#333;}
+ul.page a:hover { color:#ffad00;}
+ul.page li a { display:inline-block; height:22px; padding:0 8px; border:1px solid #FFF; line-height:22px;}
+ul.page li a:hover { border:1px solid #ffad00;}
+ul.page li a.active { border:1px solid #ffad00; color:#ffad00;}
+

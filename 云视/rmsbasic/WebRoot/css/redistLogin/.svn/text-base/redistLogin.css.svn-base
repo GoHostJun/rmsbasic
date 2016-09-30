@@ -1,0 +1,153 @@
+.wrap{
+	min-width: 980px;
+	background: url(../../images/redistLogin/bg.jpg) no-repeat center top;
+	background-size: 100% 100%;
+	position: fixed;
+}
+body,html{
+	
+	width: 100%;
+	height: 100%;
+}
+.bind-inner{
+	position: relative;
+	height: 438px;
+	width: 746px;
+	border: solid 1px #fff;
+	border-radius: 8px;
+	top: 50%;
+	margin: 0 auto;
+	margin-top: -219px;
+	background: rgba(255,255,255,0.3);
+}
+.user-msg{
+	width: 314px;
+	height: 292px;
+	border-right:solid 1px #fff ;
+	margin: 42px 0;
+	padding: 30px 0;
+	text-align: center;
+	color: #fff;
+}
+.user-img ,.user-img img{
+	height: 164px;
+	width: 164px;
+	margin: 0 auto;
+}
+.user-msg h1{
+	font-size: 28px;
+	font-weight: 400;
+	margin: 33px 0;
+}
+.user-msg p{
+	font-size: 22px;
+}
+.bind-inner input{
+	font-size: 18px;
+	color: #fff;
+	height: 46px;
+	width: 236px;
+	border: solid 1px #fff;
+	border-radius: 8px;
+	font-weight: 400;
+}
+.bind-inner input:focus{
+	outline:none;
+}
+.bind-inner .username-div{
+	position:relative;
+	width: 306px;
+	margin:0 auto;
+	margin-bottom: 25px;
+}
+.bind-inner .password-div{
+	position:relative;
+	width: 306px;
+	margin:0 auto;
+}
+.bind-inner .username-div i{
+	top:0px;
+	left:0px;
+	position:absolute;
+	display:inline-block;
+	height:46px;
+	width:60px;
+	background: url(../../images/login/yn/username.png)no-repeat 15px 6px;
+	background-size:60%;
+}
+.bind-inner .password-div i{
+	top:0px;
+	left:0px;
+	position:absolute;
+	display:inline-block;
+	height:46px;
+	width:60px;
+	background: url(../../images/login/yn/password.png)no-repeat 15px 6px;
+	background-size:60%;
+}
+.bind-inner input.username{
+	
+	padding-left: 60px;
+	background: none;
+}
+
+.bind-inner input.password{
+	padding-left: 60px;
+	background: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fff;
+}
+.user-bind{
+	width: 430px;
+	text-align: center;
+	padding: 68px 0;
+}
+.user-bind h1{
+	margin-bottom: 40px;
+	font-size: 28px;
+	color: #fff;
+	font-weight: 400;
+}
+.bind-inner .login-btn{
+	background: #00d3c2;
+	width: 308px;
+	border: none;
+	height: 46px;
+}
+.bind-inner .login-btn.active{
+	border: solid 2px #00beaf;
+}
+.bind-inner .login-btn:hover{
+	background: #00e0ce;
+}
+.notice{
+	visibility: hidden;
+	height: 68px;
+	width: 310px;
+	margin: -24px auto 0px auto;
+	background: url(../../images/redistLogin/notice-bg.png)no-repeat;
+	background-size:100%;
+	position:relative;
+	z-index:999;
+}
+.notice p{
+	padding-top: 35px;
+	color: #e62020;
+	text-align: center;
+}
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px #8EA5D4 inset !important;
+
+}
+
+

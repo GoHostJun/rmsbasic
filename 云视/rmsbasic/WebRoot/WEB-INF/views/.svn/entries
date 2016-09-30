@@ -1,0 +1,106 @@
+10
+
+dir
+18691
+svn://192.168.0.90/web/paas/rms/dz_cloud_basic/WebRoot/WEB-INF/views
+svn://192.168.0.90
+
+
+
+2016-09-08T00:59:49.062324Z
+18454
+yumingjun
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+54f9bfcc-f1af-4420-a939-eab5e148b4c7
+
+addressbook
+dir
+
+api
+dir
+
+count
+dir
+
+custom
+dir
+
+directpass
+dir
+
+directpassingpath
+dir
+
+docs
+dir
+
+emegency
+dir
+
+fastcode
+dir
+
+index
+dir
+
+logs
+dir
+
+material
+dir
+
+materialset
+dir
+
+news
+dir
+
+notice
+dir
+
+noticetype
+dir
+
+organize
+dir
+
+paths
+dir
+
+pushpath
+dir
+
+pushtask
+dir
+
+sharedocs
+dir
+
+shareresource
+dir
+
+system
+dir
+
+transcode
+dir
+
+upload
+dir
+
+wxshare
+dir
+

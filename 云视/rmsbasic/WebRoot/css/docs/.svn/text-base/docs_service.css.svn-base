@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.service_cont { padding:0 10%; margin:80px 0 100px;}
+.service_cont .service_div { position:relative; float:left; width:30%; height:225px; margin-left:5%; cursor:pointer;}
+.service_cont .service_div.libre_div { background:url(../../common/images/fuwu_icon.png) no-repeat 0 0; margin:0;}
+.service_cont .service_div.dubb_div { background:url(../../common/images/fuwu_icon.png) no-repeat -329px 0;}
+.service_cont .service_div.make_div { background:url(../../common/images/fuwu_icon.png) no-repeat -655px 0;}
+.service_cont .service_div i { display:none; position:absolute; left:0; top:0; width:225px; height:225px; background:url(../../common/images/fuwu_icon.png) no-repeat 0 -280px;}
+.service_cont .service_div.active i { display:block;}
+
+.requir_div { padding:0 10%;}
+.requir_div textarea { width:100%; border:1px solid #ddd; font-size:14px; resize:none; color:#666; line-height:2em; padding:10px; height:106px;}
+.requir_div a { float:right; width:300px; height:50px; background:#4d90fe; color:#FFF; text-align:center; line-height:50px; border:none; font-size:28px; margin-top:50px; cursor:pointer;}
+
+
+.requir_succ_div { margin:0 10%; border:1px solid #333; padding-bottom:50px;}
+.requir_succ_div h3 { font-size:28px; color:#5fbc76; font-weight:normal; margin:40px auto; text-align:center; width:440px;}
+.requir_succ_div h3 i { float:left; width:52px; height:52px; background:url(../../common/images/fuwu_icon.png) no-repeat -947px -1px; margin:-6px 10px 0 0;}
+.requir_succ_div .requir_ul li { list-style:inside; font-size:14px; color:#666; padding:0 8%; line-height:2em;}
+
+
+
+
+

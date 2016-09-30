@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin:0; padding:0; font-family:Microsoft YaHei;}
+h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,iframe,textarea,input,button,p,strong,b,a,span,del,pre,table,tr,th,td { margin:0; padding:0;}
+a { text-decoration:none;}
+img { display:block; border:none;}
+ul,li,dl,dt,dd { list-style:none;}
+i { display:inline-block;}
+.fl { float:left;}
+.fr { float:right;}
+.clear { clear:both;}
+.hide { display:none;}
+.show{display:block;}
+.stand{display: inline-block;vertical-align: top;}
+input::-ms-clear{display:none;}
+.stand{display: inline-block;vertical-align: top;}
+.clearfix,.clearfloat,.popular-reg dl,.my-basic-info dl,.my-works-comments li,.my-works-comments dl,.commits-words{*zoom:1}
+.clearfix:after,.clearfloat:after,
+.popular-reg dl:after,.my-basic-info dl:after,.my-works-comments li:after,
+.my-works-comments dl:after,
+.commits-words:after{
+	display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";
+}

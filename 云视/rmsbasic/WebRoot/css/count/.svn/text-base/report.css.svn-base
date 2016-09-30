@@ -1,0 +1,21 @@
+
+.gg_select{
+	margin:0 10px 0 5px;
+	height:30px;
+    border: 1px solid #ccc;
+}
+.gg_top_left {
+   height:30px;
+   line-height:30px;
+}
+.gg_cont .btn_div .chaxun{
+	margin-left:20px;
+}
+.tonglian-report-form{
+	width:100%;
+	margin-top:50px;
+}
+.tonglian-report-state{
+	width:100%;
+	height:380px;
+}

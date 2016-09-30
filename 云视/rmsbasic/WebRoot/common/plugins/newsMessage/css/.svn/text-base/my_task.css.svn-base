@@ -1,0 +1,111 @@
+/*我的任务20160216lsj*/
+	/*body{
+	min-width: 320px;
+}*/
+.my-task{
+	padding: 0 8px 0 12px;
+	width: 380px;
+	height: 335px;
+	border-bottom: 1px solid #ddd;
+}
+.title{
+	font-size: 18px;
+	color: #000;
+}
+.title i{
+	margin-right: 8px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 25px;
+	background: url(../img/and.png)no-repeat;
+}
+.task-cont{
+	margin: 20px auto 0 auto;
+	width: 360px;
+	height: 250px;
+}
+.task-cont .task-cont-ul li{
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	width: 172px;
+	height: 36px;
+	background: #ccc;
+	margin-bottom: 12px;
+}
+
+.task-cont .task-cont-ul a:nth-child(2n){
+	margin-left: 11px;
+}
+.task-cont .task-cont-ul li i{
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	color: #fff;
+	top: -8px;
+	right: -8px;
+	border-radius: 100%;
+	position: absolute;
+	display: block;
+	height: 24px;
+	width: 24px;
+	background: #db1500;
+}
+.task-cont-ul a:nth-child(1) li {
+	background: #3bd9a7;
+}
+.task-cont-ul a:nth-child(2) li {
+	background: #2b8ed9;
+}
+.task-cont-ul a:nth-child(3) li {
+	background: #ffb848;
+}
+.task-cont-ul a:nth-child(4) li {
+	background: #852b99;
+}
+.my-dynamic p{
+
+	font-size: 12px;
+	color: #000;
+}
+.my-dynamic p i{
+	margin-left: 18px;
+	vertical-align: middle;
+	display: inline-block;
+	height: 1px;
+	width: 198px;
+	background: #ddd;
+}
+.my-dynamic ul{
+	margin-top: 16px;
+	height: 140px;
+	width: 100%;
+}
+.my-dynamic ul p{
+	font-size: 14px;
+	color: #423331;
+	float: left;
+	width: 220px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.my-dynamic ul span{
+	font-size: 14px;
+	float: right;
+}
+.my-dynamic ul span a {
+	color: #ea3b28;
+}
+.my-dynamic ul li{
+	background: #f7f7f7;
+	margin-bottom: 18px;
+	border-left: solid 3px #df7165;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+}

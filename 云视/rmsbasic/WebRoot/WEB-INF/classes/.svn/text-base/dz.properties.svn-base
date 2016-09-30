@@ -1,0 +1,9 @@
+#------------URL white list-begin--------------------------------
+URI_LIST=redistLogin.jsp-superlogin.jsp-/user/checkUserInfo/-/rms/custom/checkUserInfo/-/user/logout/-/plugins/-/images/-/js/-/css/-/flash/-/upload/-/collback/-/api/
+URI_LOGIN=login.jsp
+#------------URL white list-end--------------------------------
+#---------Push ZhiYun configuration-begin---------------------
+APPKEY=5435c69ed3bcc5b2e4d580e393e373d3
+USERID=cdvcloud
+SECRET=7ac879e71becb992f3dba8459cc06f61
+#---------Push ZhiYun configuration-end---------------------

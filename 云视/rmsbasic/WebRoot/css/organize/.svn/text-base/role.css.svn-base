@@ -1,0 +1,11 @@
+.layui-layer-title{background:#ffad00;color:#fff;}
+.inner-title{width:50px;}
+.new-role{margin:20px auto;}
+.new-role tr{height:30px;line-height:30px;}
+.new-role td input{width:280px;height:26px;border:solid 1px #ccc;padding-left:10px;}
+.new-role td{vertical-align: top;}
+textarea{height:100px;width:270px; border:solid 1px #ccc;padding:10px;margin-top:10px;}
+.layui-layer-content{height:auto !important;}
+.save-btn,.cancel-btn{margin-top:30px; background:#4d90fe;color:#fff;width:180px;height:40px;text-align:center;line-height:40px;display:inline-block;border-radius: 8px;font-size:16px;}
+.cancel-btn{background: #e5e5e5; color: #333;}
+.save-btn{margin-right:20px;}

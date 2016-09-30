@@ -1,0 +1,70 @@
+1、文稿添加编辑
+1.1 显示素材列表  视频缩略图 vslt  图片 wanurl
+1.2 点击选中素材  对象包装vslt  视频实际为vslt 图片为wanurl
+1.3 提交文稿      对象包装vslt
+
+2、素材
+2.1 列表显示
+
+
+/////////////
+1、素材管理 
+	1.1、素材列表
+	1.2、任务列表
+2、系统管理
+	2.1 客户列表
+	2.2 配置列表
+3、告警管理
+
+
+/////////CAS////////
+1、修改web.xml
+2、修改UserAuthentication.java,打开注释代码
+	boolean resFlag = getCasUser(request, params);
+	if (!resFlag) {
+		return resFlag;
+	}
+3、修改UserServiceImpl.java,打开注释代码(不用这里)
+	userMap = addUserToAppCode(whereMap);//TODO:需要是放开
+4、修改退出（UsersFilter.java）
+	res.getWriter().write("<script languge='javascript'>window.location.href='https://passport.yntv.cdvcloud.com/logout?service=http://yntv.cdvcloud.com/'</script>")
+5、修改taglibs.jsp
+	var doLogoutUrl = 'https://passport.yntv.cdvcloud.com/logout?service=http://yntv.cdvcloud.com/';
+
+
+
+打版本需要注意事项：
+1、是否添加CAS，配置参见上面
+2、登录页面配置：（dz.properties）URI_LOGIN=loginyn.jsp
+3、首页logo配置：（nav.jsp）<img src="${ctx }/common/images/yunnanLogo.png">
+4、智云数据获取：index.js
+5、推送路径配置
+6、分享打开app连接不同版本连接不同（shareDocs.jsp、shareMaterialSet.jsp）
+	1).江苏云通联
+	Android路径：myscheme://com.cdvcloud.jsyuntonglian/get/info?type=1&_id="10001"
+	IOS路径：jsYTL://OnAir/type=1&_id="10001
+	2).江西云通联
+	Android路径：myscheme://com.cdvcloud.jxyuntonglian/get/info?type=2&_id="10001"
+	IOS路径：jxYTL://OnAir/type=2&_id="10001
+	3).贵州云通联
+	Android路径：myscheme://com.cdvcloud.gzyuntonglian/get/info?type=3&_id="10001"
+	IOS路径：gzYTL://OnAir/type=3&_id="10001
+	4).云南云通联
+	Android路径：myscheme://com.cdvcloud.yuntonglian/get/info?type=4&_id="10001"
+	IOS路径：ynYTL://OnAir/type=4&_id="10001
+	5).捷讯云通联
+	Android路径：myscheme://com.cdvcloud.onairyuntonglian/get/info?type=5&_id="10001"
+	IOS路径：jiexunYTL://OnAir/type=5&_id="10001
+
+7、修改激光推送（JPushUtil.java）
+	private static final String masterSecret = "21b6372b162e1a8d5c6624df";
+	private static final String appKey = "6bb9272d04e5608468487f12";
+
+8、修改数据库global hoteventUrl字段
+江苏 http://112.126.69.113:8082/appCode/V1/companyId/cri_test/serviceCode/realTimeNews/getNewsByChannels/
+其他 http://zyyn.cdvcloud.com/api/ytlMyworkNews
+
+
+备注：
+富文本编辑器全屏修改（ueditor.all.js）
+window.scrollTo(0,window.scrollY);

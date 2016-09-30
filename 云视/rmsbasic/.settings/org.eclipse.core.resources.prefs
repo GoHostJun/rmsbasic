@@ -1,0 +1,18 @@
+#Thu Sep 22 17:55:20 CST 2016
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/views/index/index_JX.jsp=UTF-8
+encoding//WebRoot/WEB-INF/views/index/index_jiangsu.jsp=UTF-8
+encoding//WebRoot/WEB-INF/views/wxshare/docDetail.jsp=UTF-8
+encoding//WebRoot/common/pages/nav.jsp=UTF-8
+encoding//WebRoot/common/pages/navJX.jsp=UTF-8
+encoding//WebRoot/common/plugins/webUploader/css/upload.css=UTF-8
+encoding//WebRoot/css/api/share.css=UTF-8
+encoding//WebRoot/css/directpass/directpass.css=UTF-8
+encoding//WebRoot/css/index/index_JX.css=UTF-8
+encoding//WebRoot/css/nav/navJX.css=UTF-8
+encoding//WebRoot/css/shareresource/tanchuang.css=UTF-8
+encoding//WebRoot/css/wxshare/accredit_error.css=UTF-8
+encoding//WebRoot/css/wxshare/ybd_details.css=UTF-8
+encoding//src/dz.properties=UTF-8
+encoding//src/mongodb.properties=UTF-8
+encoding/<project>=UTF-8

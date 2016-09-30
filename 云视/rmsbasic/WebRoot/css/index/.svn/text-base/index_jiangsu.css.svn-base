@@ -1,0 +1,111 @@
+
+.clearfloat:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.clearfloat {*zoom:1;}/*IE/7/6*/
+
+#content {
+	margin-top:102px !important;
+}
+.new_inner {
+	width: 80%;
+	margin:0 auto;
+	min-width: 1093px;
+}
+.lizhi_title {
+	width: 100%;
+	background: url(../../images/index/inner_bg.jpg) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.lizhi_title h1 {
+	width: 343px;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+.zc_logo {
+	width: 580px;
+	margin: 40px auto;
+}
+.footer {
+	margin: 0;
+}
+.zc_btn {
+	display: block;
+	width: 206px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	margin: 0 auto;
+	background: #e12c2d;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 0 0 20px #e27a7b;
+}
+.zc_btn:hover {
+	background: #d41818;
+}
+.zc_btn i {
+	width: 18px;
+	height: 18px;
+	background: url(../../images/index/click_icon.png) no-repeat 0 0;
+	vertical-align: middle;
+	margin-left: 18px;
+}
+.url_div {
+	width: 1093px;
+	height:82px;
+	padding:16px 0;
+	margin: 0 auto;
+}
+.url_div a {
+	display: block;
+	float: left;
+	height:82px;
+	padding:0 80px;
+	border-right: 1px dashed #999;
+}
+.url_div a:nth-child(1) {
+	border-left: 1px dashed #999;
+}
+.new_wg_btn i,.upload_metri_btn i {
+	width: 201px;
+	height: 82px;
+}
+.url_div a.gg_btn,.url_div a.hot_news_btn {
+	padding: 0 52px;
+}
+.gg_btn i,.hot_news_btn i {
+	width: 58px;
+	height: 80px;
+}
+.new_wg_btn i {
+	background: url(../../images/index/new_word_btn.png) no-repeat 0 0;
+}
+.new_wg_btn:hover i {
+	background: url(../../images/index/new_word_btn.png) no-repeat 0 -90px;
+}
+
+.upload_metri_btn i {
+	background: url(../../images/index/upload_url_btn.png) no-repeat 0 0;
+}
+.upload_metri_btn:hover i {
+	background: url(../../images/index/upload_url_btn.png) no-repeat 0 -95px;
+}
+.gg_btn i {
+	background: url(../../images/index/gg_btn.png) no-repeat 0 6px;
+}
+.gg_btn:hover i {
+	background: url(../../images/index/gg_btn.png) no-repeat 0 -77px;
+}
+
+.hot_news_btn i {
+	background: url(../../images/index/yw_btn.png) no-repeat 0 6px;
+}
+.hot_news_btn:hover i {
+	background: url(../../images/index/yw_btn.png) no-repeat 0 -77px;
+}

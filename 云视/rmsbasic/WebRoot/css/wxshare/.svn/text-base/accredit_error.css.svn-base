@@ -1,0 +1,177 @@
+body,html{
+	height: 100%;
+	width: 100%;
+	background: #f6f6f6;
+}
+.top-cue{
+	height: 50px;
+	background: #e1e2e5;
+	line-height: 50px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.circle-ic{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: #e03e3f;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.circle-ic i{
+	display: block;
+	margin: 5px auto;
+	height: 18px;
+	width: 14px;
+	background: url(../../images/wxshare/icon2.png)no-repeat 4px 0px;;
+	background-size:300% ;
+}
+.container{
+	padding: 0 2%;
+}
+.top-cue p{
+	font-size: 16px;
+	color: #666;
+}
+.accredit-cont{
+	background: #f6f6f6;
+	height: 100%;
+	width: 90%;
+	padding: 0 5%;
+}
+.accredit-cont h2{
+	margin-top: 90px;
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+.accredit-cont li {
+	font-size: 0;
+	margin-bottom: 10px;
+}
+.accredit-cont li label{
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	margin-right: 5px;
+}
+.accredit-cont li label span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 5px;
+	font-size: 16px;
+	color: #da0001;
+	line-height: 30px;
+	margin-top: 3px;
+	margin-right: 5px;
+}
+.accredit-cont li input{
+	display: inline-block;
+	vertical-align: middle;
+	width: 210px;
+	height: 32px;
+	padding: 0 10px;
+	border: solid 1px #ccc;
+	border-radius: 0;
+}
+.bottom-fixed{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	box-shadow: 0 -5px 20px #ccc;
+}
+.btn-group {
+	width: 280px;
+	margin: 10px auto;
+}
+.btn-group a{
+	display: block;
+	float: left;
+	height: 30px;
+	width: 125px;
+	border-radius: 30px;
+	background: #E03E3F;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+}
+.btn-group a i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-top: -4px;
+}
+.binding-btn{
+	width: 100px !important;
+	display: block;
+	margin: 0 auto !important;
+	float: none !important;
+}
+.binding-btn i{
+	background: url(../../images/wxshare/icon2.png)no-repeat  -5px 2px;
+	background-size: 150%;
+}
+/*弹窗*/
+.popup{
+	display:none;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.4);
+	z-index: 9999;
+}
+.popup-inner{
+	width: 179px;
+	height: 90px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	margin-top: -75px;
+	background: #fff;
+	border-radius: 5px;
+	left: 0;
+	right: 0;
+	padding: 30px 20px;
+	
+}
+.popup-inner h2{
+	font-size: 20px;
+	font-weight: 700;
+}
+.bind-successe p:nth-child(2){
+	word-break: break-all;
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.popup-inner p{
+	font-size: 16px;
+	color: #000;
+	line-height: 1.5;
+}
+.p-text{
+	height: 65px;
+	overflow: hidden;
+}
+.look-btn{
+	display: block;
+	margin: 0 auto !important;
+}
+.look-btn i{
+	background: url(../../images/wxshare/icon1.png)no-repeat  -25px -37px;
+	background-size: 500%;
+}
+.popup .btn-group{
+	margin-left: 26px;
+}
+.error-import .back-btn i{
+	background: url(../../images/wxshare/icon1.png)no-repeat  -56px -37px;
+	background-size: 500%;
+}

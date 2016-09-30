@@ -1,0 +1,269 @@
+.top{
+	height: 34px;
+	background: #e5e5e5;
+	width: 725px;
+	font-size: 18px;
+	color: #333;
+	padding-right: 5px;
+	line-height: 32px;
+	padding: 0 5px 0 30px;
+}
+ .top span{
+	font-size: 30px;
+	cursor: pointer;
+}
+ .popup-inner{
+	width: 760px;
+	border: none;
+	height: auto !important; 
+	
+}
+ .popup-cont{
+	padding: 22px 23px 0 32px;
+	color: #333;
+}
+ h2{
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+}
+ h2 span{
+	color: #2e8ded;
+}
+ .search-div{
+	position: relative;
+	height: 26px;
+	width: 485px;
+	margin: 22px 0;
+}
+ .search-div input{
+	height: 26px;
+	width: 455px;
+	border: solid 1px #c9c9c9;
+	border-radius: 2px;
+	padding-left: 30px;
+}
+ .search-div i{
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	background: url(../../images/docs/icon31.png)no-repeat;
+}
+ .search-div span{
+	font-size: 14px;
+	position: absolute;
+	right: -1px;
+	top: 1px;
+	background: #2e8ded;
+	color: #fff;
+	display: inline-block;
+	width: 60px;
+	height: 26px;
+	text-align: center;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	line-height: 26px;
+	cursor: pointer;
+}
+ .choice-div{
+	width: 486px;
+	height: 287px;
+	border: solid 1px #c9c9c9;
+	border-radius: 2px;
+}
+ .choice-div select{
+	border: solid 1px #c9c9c9;
+	width: 158px;
+	height: 27px;
+	border-top: none;
+	border-left: none;
+	font-size: 14px;
+	padding-left: 10px;
+	color: #333;
+}
+ select:nth-child(3){
+	border-right: none;
+}
+ .add-list{
+	margin-top: 10px;
+	height: 240px;
+	overflow: auto;
+}
+ .add-list li{
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-size: 14px;
+}
+ .add-list li:hover{
+    background: #2e8ded;
+	color: #fff;
+ }
+ .add-list li span{
+	text-align: center;
+	display: inline-block;
+}
+ .add-list li span:nth-child(1){
+	width: 116px;
+}
+ .add-list li span:nth-child(2){
+	width: 250px;
+}
+ .add-list li.active{
+	background: #2e8ded;
+	color: #fff;
+	
+}
+.select-input > .fl{
+	color: #999;
+	font-size: 14px;
+}
+.select-input i{
+	display: inline-block;
+	vertical-align: middle;
+	height: 18px;
+	width: 17px;
+	background: url(../../images/docs/icon31.png)no-repeat -27px 0px;
+	margin-right: 10px;
+}
+.select-input i.active{
+	background: url(../../images/docs/icon31.png)no-repeat -49px 0px;	
+}
+.select-input{
+	margin: 20px 0;
+}
+  .edit_btn_div {
+    margin-top: 0px;
+    width: 184px;
+}
+  .edit_btn_div a {
+    border-radius: 2px;
+    height: 30px;
+    width: 77px;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+ .edit_btn_div .save_btn {
+    margin-left: 0px !important;
+}
+.leaguer {
+	width: 183px;
+	height: 172px;
+	border: solid 1px #c9c9c9;
+	margin-top: 22px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.leaguer p.title{
+	border-bottom: solid 1px #c9c9c9;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #999;
+	
+}
+.leaguer-cont{
+	height: 142px;
+	overflow: auto;
+	font-size: 14px;
+}
+.leaguer .leaguer-cont p{
+	padding: 5px 10px;
+	color: #999;
+}
+.leaguer-cont ul li{
+	padding: 0 15px;
+	line-height: 1.5;
+	cursor: pointer;
+	color: #999;
+}
+.leaguer-cont ul li span.fr{
+	display: none;
+}
+.leaguer.active{
+	box-shadow: 0 0 20px #999;
+	-webkit-box-shadow: 0 0 20px #999;
+}
+.leaguer.active p.title{
+	color: #fff;
+	background: #2e8ded;
+}
+.leaguer.active .leaguer-cont ul li{
+	color: #333;
+}
+.leaguer.active ul li:hover{
+	color: #fff;
+	background: #2e8ded;
+}
+.leaguer.active ul li:hover span:nth-child(2){
+	display: block;
+	cursor: pointer;
+}
+
+/*20160704  */
+.select-input-readonly {
+	    margin: 10px 0;
+}
+
+
+.select-input-readonly > .fl,.fr{
+	color: #999;
+	font-size: 14px;
+	
+}
+
+.inner-div{
+	height:100px;
+	overflow:auto;
+	margin: 10px 0 20px 0;
+}
+
+.inner-div li{
+	float:left;
+	width:204px;
+	color: #999;
+	font-size: 14px;
+	margin-bottom:10px;
+}
+.inner-div li:first-child{
+	width:400px;
+	color:#00bcd4;	
+}
+.inner-div li i{
+	display: inline-block;
+	vertical-align: middle;
+	height: 18px;
+	width: 17px;
+	background: url(../../images/docs/icon31.png)no-repeat -27px 0px;
+	margin-right: 10px;
+}
+
+.inner-div li.active i{
+	background: url(../../images/docs/icon31.png)no-repeat -49px 0px;
+}
+.inner-div li.active{
+	color:#00bcd4;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

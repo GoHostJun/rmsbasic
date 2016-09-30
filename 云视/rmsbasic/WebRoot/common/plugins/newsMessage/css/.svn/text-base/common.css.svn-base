@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial,Microsoft YaHei;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	border: none;
+}
+ul,li {
+	list-style: none;
+}
+i {
+	display: inline-block;
+}
+
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clear {
+	clear: both;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+
+
+/*公共样式*/
+.mh_div h3 {
+	border-bottom: 1px solid #ddd;
+	height: 60px;
+	font-weight: normal;
+}
+.mh_div h3 p {
+	display: inline-block;
+	border-bottom: 2px solid #d61400;
+	height: 45px;
+	line-height: 18px;
+	padding-top: 14px;
+}
+.mh_div h3 b {
+	font-size: 18px;
+	color: #d83023;
+	font-weight: normal;
+}
+.mh_div h3 span {
+	font-size: 12px;
+	color: #999;
+}
+.mh_div h3 a {
+	float: right;
+	font-size: 12px;
+	color: #d83023;
+	margin-top: 36px;
+}
+
+.mh_cont {
+	border-bottom: 1px solid #ddd;
+}
+.mh_cont ul li {
+	font-size: 14px;
+	height: 54px;
+	line-height: 54px;
+	border-top: 1px dashed #ddd;
+}
+.mh_cont ul li:nth-child(1) {
+	border: none;
+}
+.mh_cont ul li p.news_title {
+	float: left;
+	width: 370px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.mh_cont ul li a {
+	color: #666;
+}
+.mh_cont ul li i {
+	float: left;
+	width: 4px;
+	height: 4px;
+	background: url(../images/icon.png) no-repeat -3px -1px;
+	margin: 25px 12px 0;
+	vertical-align: middle;
+}
